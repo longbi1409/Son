@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Thời Khóa Biểu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #11998e, #38ef7d);
+            text-align: center;
+        }
+        @keyframes rgbAnimation {
+                0% { background: rgb(255, 0, 0); }
+                25% { background: rgb(0, 255, 0); } 
+                50% { background: rgb(0, 0, 255); }  
+                75% { background: rgb(255, 255, 0); }
+                100% { background: rgb(255, 0, 0); } 
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 2px solid rgb(76, 175, 80);
+            object-fit: cover;
+            margin-right: 15px;
+    
+        }
+
+        .info {
+            text-align: left;
+        }
+
+        h1 {
+            color: rgb(51, 51, 51);
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(255, 0, 0, 0.7);
+            background-color: rgb(240, 255, 255);
+            
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid rgb(200, 200, 200);
+        }
+
+        th {
+            animation: rgbAnimation 5s infinite linear;
+            transition: background 0.5s ease-in-out;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(76, 175, 80, 0.1);
+        }
+
+        .time {
+            font-weight: bold;
+            color: rgb(76, 175, 80);
+        }
+
+        .subject {
+            color: rgb(85, 85, 85);
+            cursor: pointer;
+        }
+
+        .subject:focus {
+            background-color: yellow;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSNK98p2C7snCJpOQOoxgwu1M0K9QWVJmm3A&s" class="profile-img" >
+            <p><strong>Họ và Tên:</strong> Võ Bá Cao Sơn</p>
+            <p><strong>Lớp:</strong> 12A3</p>
+
+    <h1>Thời Khóa Biểu</h1>
+    <table id="schedule">
+        <tr>
+            <th>Thời gian</th>
+            <th>Thứ 2</th>
+            <th>Thứ 3</th>
+            <th>Thứ 4</th>
+            <th>Thứ 5</th>
+            <th>Thứ 6</th>
+            <th>Thứ 7</th>
+            <th>Chủ Nhật</th>
+        </tr>
+        <tr>
+            <td class="time">Tiết 1</td>
+            <td class="subject" >TNHN</td>
+            <td class="subject" >Anh</td>
+            <td class="subject" >Văn</td>
+            <td class="subject" >Toán</td>
+            <td class="subject" >Hóa</td>
+            <td class="subject" >Lí1/Hóa3</td>
+            <td class="subject" >X</td>
+        </tr>
+        <tr>
+            <td class="time">Tiết 2</td>
+            <td class="subject" >TNHN</td>
+            <td class="subject" >Anh</td>
+            <td class="subject" >Văn</td>
+            <td class="subject" >Lý</td>
+            <td class="subject" >Sinh</td>
+            <td class="subject" >Lí1/Hóa3</td>
+            <td class="subject" >X</td>
+        </tr>
+        <tr>
+            <td class="time">Tiết 3</td>
+            <td class="subject">Toán</td>
+            <td class="subject">Sử</td>
+            <td class="subject">Lý</td>
+            <td class="subject">Sử</td>
+            <td class="subject">Tin</td>
+            <td class="subject">Anh2/Hóa4/Sử2</td>
+            <td class="subject">X</td>
+        </tr>
+        <tr>
+            <td class="time">Tiết 4</td>
+            <td class="subject">Tin</td>
+            <td class="subject">Toán</td>
+            <td class="subject">Hóa</td>
+            <td class="subject">Hóa</td>
+            <td class="subject">Lý</td>
+            <td class="subject">Anh2/Hóa4/Sử2</td>
+            <td class="subject">X</td>
+        </tr>
+        <tr>
+            <td class="time">Tiết 5</td>
+            <td class="subject">Anh</td>
+            <td class="subject">Toán</td>
+            <td class="subject">Sinh</td>
+            <td class="subject">HN</td>
+            <td class="subject">Văn</td>
+            <td class="subject">X</td>
+            <td class="subject">X</td>
+        </tr>   
+    </table>
+</body>
+</html>
